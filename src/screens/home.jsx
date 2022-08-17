@@ -7,7 +7,7 @@ import landarea from "../assets/landarea.svg";
 import ofbuid from "../assets/ofbuid.svg";
 import maximum from "../assets/maximum.svg";
 import covered from "../assets/covered.svg";
-import right from "../assets/right.png"
+import right from "../assets/right.png";
 
 export default function home() {
   return (
@@ -149,8 +149,8 @@ export default function home() {
           </div>
         </div>
       </div>
-      <div className="features__main__container" id="project-features">
-        <div className="features__sub__boxes features__left__box__border">
+      <div className="features__main__container" id="project-features" >
+        <div className="features__sub__boxes features__left__box__border" style={{width:"50%",zIndex: "999",}}>
           <div className="features__content__container">
             <div className="features__heading">project features</div>
             <div className="feature__text__background__light">
@@ -163,15 +163,21 @@ export default function home() {
               basesd Industrial mall
             </div>
             <div className="feature__text__background__light">
-            <span className="feature__text"> World's </span> one of the best{" "}
-              <span className="feature__text">International trade center </span> 
-             
+              <span className="feature__text"> World's </span> one of the best{" "}
+              <span className="feature__text">International trade center </span>
             </div>
           </div>
         </div>
-        <div className="features__sub__boxes feature__background" style={{marginTop:"2em"}} >
-<img src={right} alt="" className="features__theme__bg"/>
+        <div
+          className="features__sub__boxes feature__background"
+          style={{ marginTop: "2em", border:"none", width:"50%", }}
+        >
+          <img src={right} alt="" className="features__theme__bg" />
         </div>
+        <div
+          className="project__location__main__container"
+          id="project-locations"
+        ></div>
       </div>
     </>
   );

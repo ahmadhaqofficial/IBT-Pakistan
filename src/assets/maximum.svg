@@ -1,0 +1,24 @@
+<svg id="Group_314" data-name="Group 314" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="79.002" height="79.173" viewBox="0 0 79.002 79.173">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_805" data-name="Rectangle 805" width="79.002" height="79.173" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_313" data-name="Group 313" clip-path="url(#clip-path)">
+    <path id="Path_43" data-name="Path 43" d="M216.967,79.619c-.177-.213-.337-.442-.533-.635q-6.377-6.3-12.763-12.595c-.2-.2-.427-.372-.613-.532l4.49-4.339,6.417,6.337V12.389l-6.281,6.574-4.666-4.5L217.075.6c.218.209.423.4.621.6q6.348,6.331,12.7,12.661a7.312,7.312,0,0,0,.642.515v.155L226.668,19.1l-6.433-6.487V67.777l6.228-6.278,4.455,4.422c-.178.15-.452.348-.688.584q-6.558,6.552-13.108,13.113Z" transform="translate(-152.033 -0.446)"/>
+    <path id="Path_44" data-name="Path 44" d="M121.906,279.417v-6.186h6.155V267.4h6.278c-.08,2.4.023,4.8-.288,7.152a5.84,5.84,0,0,1-5.058,4.741,3.264,3.264,0,0,0-.439.126Z" transform="translate(-91.291 -200.245)"/>
+    <path id="Path_45" data-name="Path 45" d="M5.726,279.436A16.716,16.716,0,0,1,2.614,278.2a5.631,5.631,0,0,1-2.58-4.769c-.066-1.98-.014-3.964-.014-6.01H6.18v5.8h6.039v6.215Z" transform="translate(0 -200.264)"/>
+    <rect id="Rectangle_795" data-name="Rectangle 795" width="6.184" height="6.142" transform="translate(18.248 73.031)"/>
+    <path id="Path_46" data-name="Path 46" d="M128.234,12.157V6.217h-6.109V.006h1.265c1.543,0,3.088-.014,4.631,0a6.153,6.153,0,0,1,6.381,6.07c.1,2,.017,4.01.017,6.078Z" transform="translate(-91.455 0)"/>
+    <path id="Path_47" data-name="Path 47" d="M.4,12.183C.4,9.746.212,7.318.452,4.934A5.82,5.82,0,0,1,5.443.131,8.377,8.377,0,0,1,6.594.022C8.52.012,10.445.017,12.417.017V6.183H6.464v6Z" transform="translate(-0.247 -0.012)"/>
+    <rect id="Rectangle_796" data-name="Rectangle 796" width="6.112" height="6.084" transform="translate(18.278 0.049)"/>
+    <rect id="Rectangle_797" data-name="Rectangle 797" width="6.087" height="6.087" transform="translate(0.042 18.444)"/>
+    <rect id="Rectangle_798" data-name="Rectangle 798" width="6.097" height="6.083" transform="translate(36.827 18.459)"/>
+    <rect id="Rectangle_799" data-name="Rectangle 799" width="6.075" height="6.115" transform="translate(0.054 30.501)"/>
+    <rect id="Rectangle_800" data-name="Rectangle 800" width="6.089" height="6.084" transform="translate(36.831 30.829)"/>
+    <rect id="Rectangle_801" data-name="Rectangle 801" width="6.067" height="6.109" transform="translate(0.072 42.576)"/>
+    <rect id="Rectangle_802" data-name="Rectangle 802" width="6.084" height="6.085" transform="translate(36.847 42.864)"/>
+    <rect id="Rectangle_803" data-name="Rectangle 803" width="6.075" height="6.114" transform="translate(0.068 54.606)"/>
+    <rect id="Rectangle_804" data-name="Rectangle 804" width="6.109" height="6.068" transform="translate(36.808 54.95)"/>
+  </g>
+</svg>

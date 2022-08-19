@@ -313,6 +313,7 @@ export default function home() {
           Capital Islamabad
         </div>
       </div>
+      <div  className="location__first">
       <div className="location__main" >
       <div className="location__finder__footer__main">
       <div className="location__finder__footer">
@@ -324,6 +325,7 @@ export default function home() {
         International Products under one roof in international pavilion, While
         our national products will be displayed at national pavilion
         <div className="location__finder__footer__button"><button>Contact us</button></div>
+      </div>
       </div>
      
       </div></div>

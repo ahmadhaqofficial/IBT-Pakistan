@@ -785,6 +785,7 @@ background-color:black ;
 .location__finder__content{
   position: absolute;
   top: 17%;
+  font-size: 16px;
   width: 70%;
   max-width: 1440px;
   margin: 0 auto;
@@ -798,8 +799,8 @@ background-color:black ;
   display: flex;
   // background-color: #a58838;
   color: white;
-  height: 110px;
-  border-bottom-right-radius: 50px;
+  height: fit-content;
+  
   width: 70%;
 
 }
@@ -813,5 +814,27 @@ background-color:black ;
 }
 .location__main{
   background-color: #a58838;
-  width: 80%;
+  width: 75%;
+  border-bottom-right-radius: 80px;
+  margin: 0 auto; 
+  margin-top: -1em;
+  padding: 1em;
+  font-size: 16px;
+  left: 0;
+  right: 0;
+  max-width: 1920px;
+  
+}
+.location__finder__footer__button{
+  margin-left: 4em;
+  width: 100%;
+margin-top: 2em;
+
+}
+.location__finder__footer__button button{
+padding: .7em;
+background-color: #a58838;
+border:  1px solid white;
+color:white;
+cursor: pointer;
 }

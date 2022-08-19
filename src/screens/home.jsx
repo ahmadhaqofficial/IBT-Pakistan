@@ -18,7 +18,7 @@ import location from "../assets/location.png";
 export default function home() {
   return (
     <>
-      <div className="header__content">
+      <div className="header__content" id="home">
         <img src={back} alt="" />
         <div className="header__content__img">
           <img src={overlay} alt="" />
@@ -29,8 +29,8 @@ export default function home() {
             IBT <span>Pakistan</span>
           </div>
           <div className="header__content__content__nav__components">
-            <a href="Home">Home</a>
-            <a href="Home">Components</a>
+            <a  href="Home">Home</a>
+            <a href="components">Components</a>
             <a href="Home">Specifications</a>
             <a href="Home">Features</a>
             <a href="Home">Location</a>
@@ -46,7 +46,7 @@ export default function home() {
         {/* /* 
 //second section// */}
 
-        <div class="introduction__section">
+        <div class="introduction__section" >
           <div className="introduction__section__left__weaper">
             <div className="introduction__section__left__weaper_heading">
               INTRODUCTION
@@ -76,12 +76,12 @@ export default function home() {
 
       {/* //third section// */}
 
-      <div className="components__main__container">
+      <div className="components__main__container" id="components" >
         <div className="components__main__container__bg__dark">
           <div className="components__main__container__bg__boarder"></div>
           <div
             className="intro__container__content__heading"
-            style={{ width: "67%" }}
+            style={{ width: "67%",paddingLeft:"0" }}
           >
             PROJECT COMPONENTS
             <div className="intro__container__content__heading__underline"></div>
@@ -211,10 +211,18 @@ export default function home() {
           </div>
         </div>
       </div>
+
+
       <div className="features__main__container" id="project-features">
         <div className="features__sub__boxes " style={{ zIndex: "999" }}>
           <div className="features__content__container">
-            <div className="features__heading">project features</div>
+          <div
+          className="intro__container__content__heading"
+          style={{paddingLeft:"0"}}
+        >
+       PROJECT FEATURES
+          <div className="intro__container__content__heading__underline"></div>
+        </div>
             <div className="feature__text__background__light">
               <span className="feature__text"> Largest </span> and{" "}
               <span className="feature__text">Tallest </span> Building of
@@ -245,7 +253,7 @@ export default function home() {
       <div className="project__location__main__container">
         <div
           className="intro__container__content__heading"
-          style={{ paddingLeft: "4em" }}
+          style={{ paddingLeft: "-1em" }}
         >
           LOCATION DISTANCES
           <div className="intro__container__content__heading__underline"></div>
@@ -269,7 +277,7 @@ export default function home() {
               </div>
             </div>
           </div>
-          <div className="project__locations__cards__container">
+          <div className="project__locations__cards__container" style={{marginLeft:"0"}}>
             <div className="location__card">
               <div className="location__logo__container">
                 <img className="location__logo" src={newone} alt="" />
@@ -305,6 +313,7 @@ export default function home() {
           Capital Islamabad
         </div>
       </div>
+      <div className="location__main" >
       <div className="location__finder__footer__main">
       <div className="location__finder__footer">
         IBT is an industrial Mall , It will cater needs of all construction
@@ -314,9 +323,10 @@ export default function home() {
         for Pakistani traders to buy Chinese, Korean, German and other
         International Products under one roof in international pavilion, While
         our national products will be displayed at national pavilion
+        <div className="location__finder__footer__button"><button>Contact us</button></div>
       </div>
-      <div className="location__finder__footer__button"><button>Contact us</button></div>
-      </div>
+     
+      </div></div>
     </>
   );
 }

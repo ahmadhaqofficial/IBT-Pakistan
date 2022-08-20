@@ -322,10 +322,12 @@ margin-left: 0em !important;
 @media(max-width:1000px){
   .ibt__contant__nav{
     display: flex;
-  background-color: black;
+  background-color:#a58838;
   padding: 8px;
   border-radius: 12px;
   cursor: pointer;
+  outline: none;
+  border: none;
   }
   .header__content__content__nav__components{
     top: 4em;
@@ -337,7 +339,7 @@ margin-left: 0em !important;
     position: absolute;
     height: 330px;
     width: 100%;
-    background-color: #d1cfcf;
+    background-color: rgba(0,0,0,.7);
   }
 }
 @media (max-width: 960px) {

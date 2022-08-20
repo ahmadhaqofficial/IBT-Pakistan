@@ -20,11 +20,11 @@ import newthree from "../assets/newfour.png";
 import location from "../assets/location.png";
 import foterone from "../assets/foterone.png";
 import fotertwo from "../assets/fotertwo.png";
-import facebook from "../assets/facebook.png"
-import linkdin from "../assets/linkdin.png"
-import snapchat from "../assets/snapchat.png"
-import twitter from "../assets/twitter.png"
-import whatssapp from "../assets/whatssapp.png"
+import facebook from "../assets/facebook.png";
+import linkdin from "../assets/linkdin.png";
+import snapchat from "../assets/snapchat.png";
+import twitter from "../assets/twitter.png";
+import whatssapp from "../assets/whatssapp.png";
 
 export default function home() {
   return (
@@ -91,48 +91,49 @@ export default function home() {
         <div className="components__main__container__bg__dark">
           <div className="components__main__container__bg__boarder"></div>
           <div className="max__class">
-          <div 
-            className="intro__container__content__heading"
-            style={{ width: "88%", paddingLeft: "0",margin:"0 auto" }}
-          >
-            PROJECT COMPONENTS
-            <div className="intro__container__content__heading__underline"></div>
+            <div
+              className="intro__container__content__heading"
+              style={{ width: "88%", paddingLeft: "0", margin: "0 auto" }}
+            >
+              PROJECT COMPONENTS
+              <div className="intro__container__content__heading__underline"></div>
+            </div>
+            <div className="components__cards__container">
+              <div className="card__container">
+                <img className="card__image" src={onesec} alt="" />
+                <div className="card__content__container">
+                  <div className="card__text">One Five Star Hotel</div>
+                  <div className="card1__container__content__heading__underline"></div>
+                </div>
+              </div>
+              <div className="card__container">
+                <div className="img__container"></div>
+                <img className="card__image" src={secend} alt="" />
+                <div className="card__content__container">
+                  <div className="card__text">Industrial Mall</div>
+                  <div className="card1__container__content__heading__underline"></div>
+                </div>
+              </div>
+              <div className="card__container">
+                <img className="card__image" src={thirdsec} alt="" />
+                <div className="card__content__container">
+                  <div className="card__text">
+                    One dedicated tower for most Luxurious Apartments
+                  </div>
+                  <div className="card1__container__content__heading__underline"></div>
+                </div>
+              </div>
+              <div className="card__container">
+                <img className="card__image" src={fourthsec} alt="" />
+                <div className="card__content__container">
+                  <div className="card__text">
+                    Dedicated Corporate And IT Centre
+                  </div>
+                  <div className="card1__container__content__heading__underline"></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="components__cards__container">
-            <div className="card__container">
-              <img className="card__image" src={onesec} alt="" />
-              <div className="card__content__container">
-                <div className="card__text">One Five Star Hotel</div>
-                <div className="card1__container__content__heading__underline"></div>
-              </div>
-            </div>
-            <div className="card__container">
-              <div className="img__container"></div>
-              <img className="card__image" src={secend} alt="" />
-              <div className="card__content__container">
-                <div className="card__text">Industrial Mall</div>
-                <div className="card1__container__content__heading__underline"></div>
-              </div>
-            </div>
-            <div className="card__container">
-              <img className="card__image" src={thirdsec} alt="" />
-              <div className="card__content__container">
-                <div className="card__text">
-                  One dedicated tower for most Luxurious Apartments
-                </div>
-                <div className="card1__container__content__heading__underline"></div>
-              </div>
-            </div>
-            <div className="card__container">
-              <img className="card__image" src={fourthsec} alt="" />
-              <div className="card__content__container">
-                <div className="card__text">
-                  Dedicated Corporate And IT Centre
-                </div>
-                <div className="card1__container__content__heading__underline"></div>
-              </div>
-            </div>
-          </div></div>
         </div>
       </div>
 
@@ -212,7 +213,7 @@ export default function home() {
         <div className="project__specs__boxes">
           <div className="project__specs__boxes__border">
             <div className="project__specs__boxes__dark">
-              <div className="project__specs__heading">
+              <div className="project__specs__heading" >
                 project Specifications
               </div>
             </div>
@@ -225,7 +226,7 @@ export default function home() {
           <div className="features__content__container">
             <div
               className="intro__container__content__heading"
-              style={{ paddingLeft: "0" }}
+              style={{ paddingLeft: "0",width:"100%",margin:"0" }}
             >
               PROJECT FEATURES
               <div className="intro__container__content__heading__underline"></div>
@@ -324,7 +325,6 @@ export default function home() {
         </div>
       </div>
       <div className="location__first">
-    
         <div className="location__main">
           <div className="location__finder__footer__main">
             <div className="location__finder__footer">
@@ -339,9 +339,9 @@ export default function home() {
               <div className="location__finder__footer__button">
                 <button>Contact us</button>
               </div>
-          
+            </div>
           </div>
-        </div></div>
+        </div>
       </div>
 
       <div className="footer__main__container">
@@ -354,11 +354,12 @@ export default function home() {
         <div style={{ marginLeft: "1.5em" }}>
           <div className="footer__icons__list">
             <div className="footer__columms" style={{ width: "33%" }}>
-              <div
+              <div 
                 style={{
                   fontSize: "16px",
                   paddingRight: "1.5em",
                   marginTop: "1em",
+                  width:"100%",
                   fontWeight: "400",
                 }}
               >
@@ -374,12 +375,11 @@ export default function home() {
             </div>
             <div className="footer__columms left__border">
               <div className="footer__Links__tilte">Home</div>
-                
-                <div className="footer__Link">Components</div>
-                <div className="footer__Link">Specifications</div>
-                <div className="footer__Link">Features</div>
-                <div className="footer__Link">Location</div>
-              
+
+              <div className="footer__Link">Components</div>
+              <div className="footer__Link">Specifications</div>
+              <div className="footer__Link">Features</div>
+              <div className="footer__Link">Location</div>
             </div>
             <div className="footer__columms left__border">
               <div className="footer__Links__tilte">Quick links</div>
@@ -422,13 +422,22 @@ export default function home() {
             </div>
           </div>
           <div className="footer__icons__list__bottom">
-          <a className="social__icon" href=""><img src={facebook} alt="" /></a>
-          <a className="social__icon" href=""><img src={linkdin} alt="" /></a>
-          <a className="social__icon" href=""><img src={snapchat} alt="" /></a>
-          <a className="social__icon" href=""><img src={twitter} alt="" /></a>
-          <a className="social__icon" href=""><img src={whatssapp} alt="" /></a>
-        </div>
-       
+            <a className="social__icon" href="">
+              <img src={facebook} alt="" />
+            </a>
+            <a className="social__icon" href="">
+              <img src={linkdin} alt="" />
+            </a>
+            <a className="social__icon" href="">
+              <img src={snapchat} alt="" />
+            </a>
+            <a className="social__icon" href="">
+              <img src={twitter} alt="" />
+            </a>
+            <a className="social__icon" href="">
+              <img src={whatssapp} alt="" />
+            </a>
+          </div>
         </div>
         <div className="footrer__img__container">
           <img className="footer__right__img" src={fotertwo} alt="" />

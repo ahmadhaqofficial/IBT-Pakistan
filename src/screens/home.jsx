@@ -2,7 +2,7 @@ import React from "react";
 import back from "../assets/baack.png";
 import overlay from "../assets/overlay.png";
 import "./App.scss";
-import "animate.css";
+ 
 import introduction from "../assets/introduction.svg";
 import landarea from "../assets/landarea.svg";
 import ofbuid from "../assets/ofbuid.svg";
@@ -25,6 +25,7 @@ import linkdin from "../assets/linkdin.png";
 import snapchat from "../assets/snapchat.png";
 import twitter from "../assets/twitter.png";
 import whatssapp from "../assets/whatssapp.png";
+import Header from "./Header"
 
 export default function home() {
   return (
@@ -35,18 +36,7 @@ export default function home() {
           <img src={overlay} alt="" />
         </div>
 
-        <div className="header__content__content__nav__main">
-          <div className="header__content__nav__heading">
-            IBT <span>Pakistan</span>
-          </div>
-          <div className="header__content__content__nav__components">
-            <a href="#Home">Home</a>
-            <a href="#components">Components</a>
-            <a href="#Specifications">Specifications</a>
-            <a href="#Features">Features</a>
-            <a href="#Location">Location</a>
-          </div>
-        </div>
+        <Header/>
         <div className="header__content__header__heading">
           IBT <span>Pakistan</span>
         </div>
@@ -444,5 +434,6 @@ export default function home() {
         </div>
       </div>
     </>
+    
   );
 }

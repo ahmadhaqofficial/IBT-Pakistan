@@ -11,12 +11,12 @@ body {
   overflow-x: hidden;
   font-size: 18px;
   font-family: "Inter", sans-serif;
+ 
 }
 
 .header__content {
   position: relative;
-  animation-duration: 1s;
-  animation-name: slidein;
+
   
   scroll-behavior: unset;
 }
@@ -81,7 +81,8 @@ body {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 0%;
+  position: fixed;
+  top: 1em;
   left: 0;
   right: 0;
   max-width: 1440px;
@@ -90,7 +91,9 @@ body {
   padding: 2em;
   padding-top: 0em;
   align-items: center;
-  
+  animation-duration: 1s;
+  animation-name: slidein;
+  z-index: 999;
 }
 .header__content__header__heading {
   font-size: 50px;
@@ -286,7 +289,9 @@ body {
   padding-left: 1em;
   width: 85%;
 }
-
+.ibt__contant__nav{
+  display: none;
+}
 @media (max-width: 1300px) {
   .project__specs__boxes {
     width: 35%;
@@ -314,7 +319,27 @@ margin-left: 0em !important;
     width: 40%;
   }
 }
-
+@media(max-width:1000px){
+  .ibt__contant__nav{
+    display: flex;
+  background-color: black;
+  padding: 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  }
+  .header__content__content__nav__components{
+    top: 4em;
+    right: 0;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 330px;
+    width: 100%;
+    background-color: #d1cfcf;
+  }
+}
 @media (max-width: 960px) {
   .project__specs__boxes {
     width: 45%;

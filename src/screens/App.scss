@@ -514,6 +514,9 @@ body {
   .location__main {
     margin-left: 0 !important;
   }
+  .location__finder__content {
+    width: 90% !important;
+  }
 }
 @media (max-width: 1670px) {
   .features__content__container {
@@ -773,7 +776,7 @@ body {
     width: 270px !important;
   }
   .header__content__img img {
-    display: none;
+    width: 100% !important;
   }
   .header__content__header__heading {
     font-size: 25px !important;

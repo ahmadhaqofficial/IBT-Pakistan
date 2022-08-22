@@ -2,7 +2,7 @@ import React from "react";
 import back from "../assets/baack.png";
 import overlay from "../assets/overlay.png";
 import "./App.scss";
- 
+
 import introduction from "../assets/introduction.svg";
 import landarea from "../assets/landarea.svg";
 import ofbuid from "../assets/ofbuid.svg";
@@ -25,7 +25,7 @@ import linkdin from "../assets/linkdin.png";
 import snapchat from "../assets/snapchat.png";
 import twitter from "../assets/twitter.png";
 import whatssapp from "../assets/whatssapp.png";
-import Header from "./Header"
+import Header from "./Header";
 
 export default function home() {
   return (
@@ -36,90 +36,90 @@ export default function home() {
           <img src={overlay} alt="" />
         </div>
 
-        <Header/>
+        <Header />
         <div className="header__content__header__heading">
           IBT <span>Pakistan</span>
         </div>
         <div className="header__content__header__sub__heading">
           Pakistan's Largest Business Tower
         </div>
-
-        {/* /* 
+      </div>
+      {/* /* 
 //second section// */}
 
-        <div class="introduction__section">
-          <div className="introduction__section__left__weaper">
-            <div className="introduction__section__left__weaper_heading">
-              INTRODUCTION
-            </div>
-            <div className="introduction__section__left__weaper_para">
-              IBT is an industrial Mall , It will cater needs of all
-              construction industry, Home furnitures and accessories and auto
-              mobile industry Pakistan needs industrial mall for its economic
-              growth It will be like mini china It will be like a trade centre
-              IBT will create opportunities for Pakistani traders to buy
-              Chinese, Korean, German and other International Products under one
-              roof in international pavilion, While our national products will
-              be displayed at national pavilion
-            </div>
+      <div class="introduction__section" data-aos="fade-right">
+        <div className="introduction__section__left__weaper">
+          <div className="introduction__section__left__weaper_heading">
+            INTRODUCTION
           </div>
-          <div className="introduction__section__right__weaper">
-            <div className="introduction__section__right__weaper__svg">
-              <img
-                className="introduction__section__right__weaper__svg_pic"
-                src={introduction}
-                alt=""
-              />
-            </div>
+          <div className="introduction__section__left__weaper_para">
+            IBT is an industrial Mall , It will cater needs of all construction
+            industry, Home furnitures and accessories and auto mobile industry
+            Pakistan needs industrial mall for its economic growth It will be
+            like mini china It will be like a trade centre IBT will create
+            opportunities for Pakistani traders to buy Chinese, Korean, German
+            and other International Products under one roof in international
+            pavilion, While our national products will be displayed at national
+            pavilion
+          </div>
+        </div>
+        <div className="introduction__section__right__weaper">
+          <div className="introduction__section__right__weaper__svg">
+            <img
+              className="introduction__section__right__weaper__svg_pic"
+              src={introduction}
+              alt=""
+            />
           </div>
         </div>
       </div>
 
       {/* //third section// */}
-
-      <div className="components__main__container" id="components">
-        <div className="components__main__container__bg__dark">
-          <div className="components__main__container__bg__boarder"></div>
-          <div className="max__class">
-            <div
-              className="intro__container__content__heading"
-              style={{ width: "88%", paddingLeft: "0", margin: "0 auto" }}
-            >
-              PROJECT COMPONENTS
-              <div className="intro__container__content__heading__underline"></div>
-            </div>
-            <div className="components__cards__container">
-              <div className="card__container">
-                <img className="card__image" src={onesec} alt="" />
-                <div className="card__content__container">
-                  <div className="card__text">One Five Star Hotel</div>
-                  <div className="card1__container__content__heading__underline"></div>
-                </div>
+      <div data-aos="fade-right" id="components">
+        <div className="components__main__container">
+          <div className="components__main__container__bg__dark">
+            <div className="components__main__container__bg__boarder"></div>
+            <div className="max__class">
+              <div
+                className="intro__container__content__heading"
+                style={{ width: "88%", paddingLeft: "0", margin: "0 auto" }}
+              >
+                PROJECT COMPONENTS
+                <div className="intro__container__content__heading__underline"></div>
               </div>
-              <div className="card__container">
-                <div className="img__container"></div>
-                <img className="card__image" src={secend} alt="" />
-                <div className="card__content__container">
-                  <div className="card__text">Industrial Mall</div>
-                  <div className="card1__container__content__heading__underline"></div>
-                </div>
-              </div>
-              <div className="card__container">
-                <img className="card__image" src={thirdsec} alt="" />
-                <div className="card__content__container">
-                  <div className="card__text">
-                    One dedicated tower for most Luxurious Apartments
+              <div className="components__cards__container">
+                <div className="card__container">
+                  <img className="card__image" src={onesec} alt="" />
+                  <div className="card__content__container">
+                    <div className="card__text">One Five Star Hotel</div>
+                    <div className="card1__container__content__heading__underline"></div>
                   </div>
-                  <div className="card1__container__content__heading__underline"></div>
                 </div>
-              </div>
-              <div className="card__container">
-                <img className="card__image" src={fourthsec} alt="" />
-                <div className="card__content__container">
-                  <div className="card__text">
-                    Dedicated Corporate And IT Centre
+                <div className="card__container">
+                  <div className="img__container"></div>
+                  <img className="card__image" src={secend} alt="" />
+                  <div className="card__content__container">
+                    <div className="card__text">Industrial Mall</div>
+                    <div className="card1__container__content__heading__underline"></div>
                   </div>
-                  <div className="card1__container__content__heading__underline"></div>
+                </div>
+                <div className="card__container">
+                  <img className="card__image" src={thirdsec} alt="" />
+                  <div className="card__content__container">
+                    <div className="card__text">
+                      One dedicated tower for most Luxurious Apartments
+                    </div>
+                    <div className="card1__container__content__heading__underline"></div>
+                  </div>
+                </div>
+                <div className="card__container">
+                  <img className="card__image" src={fourthsec} alt="" />
+                  <div className="card__content__container">
+                    <div className="card__text">
+                      Dedicated Corporate And IT Centre
+                    </div>
+                    <div className="card1__container__content__heading__underline"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -129,7 +129,11 @@ export default function home() {
 
       {/* //fourth secton// */}
 
-      <div className="project__specifiactions" id="Specifications">
+      <div
+        className="project__specifiactions"
+        id="Specifications"
+        data-aos="fade-down"
+      >
         <div className="project__specifiactions__left__wrapper">
           <div className="project__specifiactions__left__wrapper_content">
             <div className="project__specifiactions__left__wrapper_content_svg">
@@ -203,7 +207,7 @@ export default function home() {
         <div className="project__specs__boxes">
           <div className="project__specs__boxes__border">
             <div className="project__specs__boxes__dark">
-              <div className="project__specs__heading" >
+              <div className="project__specs__heading">
                 project Specifications
               </div>
             </div>
@@ -212,11 +216,15 @@ export default function home() {
       </div>
 
       <div className="features__main__container" id="Features">
-        <div className="features__sub__boxes " style={{ zIndex: "999" }}>
+        <div
+          className="features__sub__boxes "
+          style={{ zIndex: "999" }}
+          data-aos="fade-right"
+        >
           <div className="features__content__container">
             <div
               className="intro__container__content__heading"
-              style={{ paddingLeft: "0",width:"100%",margin:"0" }}
+              style={{ paddingLeft: "0", width: "100%", margin: "0" }}
             >
               PROJECT FEATURES
               <div className="intro__container__content__heading__underline"></div>
@@ -226,11 +234,17 @@ export default function home() {
               <span className="feature__text">Tallest </span> Building of
               Pakistan
             </div>
-            <div className="feature__text__background__light">
+            <div
+              className="feature__text__background__light"
+              style={{ width: "110%" }}
+            >
               <span className="feature__text"> Pakistan's 1st </span> theme
               basesd Industrial mall
             </div>
-            <div className="feature__text__background__light">
+            <div
+              className="feature__text__background__light"
+              style={{ width: "115%" }}
+            >
               <span className="feature__text"> World's </span> one of the best{" "}
               <span className="feature__text">International trade center </span>
             </div>
@@ -239,6 +253,7 @@ export default function home() {
         <div
           className="features__sub__boxes "
           style={{ marginTop: "2em", border: "none" }}
+          data-aos="fade-left"
         >
           <img src={right} alt="" className="features__theme__bg" />
         </div>
@@ -248,7 +263,7 @@ export default function home() {
         ></div>
       </div>
 
-      <div className="project__location__main__container">
+      <div className="project__location__main__container" data-aos="fade-up">
         <div
           className="intro__container__content__heading"
           style={{ paddingLeft: "1em" }}
@@ -300,7 +315,7 @@ export default function home() {
         </div>
       </div>
 
-      <div className="features__container" id="Location">
+      <div className="features__container" id="Location" data-aos="fade-left">
         <img className="feature__bg__img" src={location} alt="" />
         <div className="location__finder__heading">
           LOCATIONS FEATURES
@@ -314,7 +329,7 @@ export default function home() {
           Capital Islamabad
         </div>
       </div>
-      <div className="location__first">
+      <div className="location__first" data-aos="fade-left">
         <div className="location__main">
           <div className="location__finder__footer__main">
             <div className="location__finder__footer">
@@ -334,7 +349,7 @@ export default function home() {
         </div>
       </div>
 
-      <div className="footer__main__container">
+      <div className="footer__main__container" data-aos="fade-up-right">
         <div
           className="footrer__img__container"
           style={{ dispaly: "flex", alignItems: "flex-end" }}
@@ -344,12 +359,12 @@ export default function home() {
         <div style={{ marginLeft: "1.5em" }}>
           <div className="footer__icons__list">
             <div className="footer__columms" style={{ width: "33%" }}>
-              <div 
+              <div
                 style={{
                   fontSize: "16px",
                   paddingRight: "1.5em",
                   marginTop: "1em",
-                  width:"100%",
+                  width: "100%",
                   fontWeight: "400",
                 }}
               >
@@ -434,6 +449,5 @@ export default function home() {
         </div>
       </div>
     </>
-    
   );
 }

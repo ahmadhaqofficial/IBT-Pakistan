@@ -1,71 +1,100 @@
 import React, { useLayoutEffect } from "react";
+
 import OutsideClickHandler from "react-outside-click-handler";
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(true);
   const [isScrolling, setIsScrolling] = React.useState(false);
+  const [fix, setFix] = React.useState(false);
 
-  function checkNavOpenClose(){
-    if(window.innerWidth< 1000){
-        setIsOpen(false)
-    } else{
-        setIsOpen(true);
+  function checkNavOpenClose() {
+    if (window.innerWidth < 1200) {
+      setIsOpen(false);
+    } else {
+      setIsOpen(true);
     }
   }
-useLayoutEffect(() => {
+  useLayoutEffect(() => {
     checkNavOpenClose();
-  window.addEventListener("resize", checkNavOpenClose);
-  window.addEventListener("scroll", ()=> {
-    checkNavOpenClose();
-    if(window.scrollY>0){
+    window.addEventListener("resize", checkNavOpenClose);
+    window.addEventListener("scroll", () => {
+      checkNavOpenClose();
+      if (window.scrollY > 0) {
         setIsScrolling(true);
-    } else {
+      } else {
         setIsScrolling(false);
+      }
+    });
+  }, []);
+
+  function setFixed() {
+    if (window.scrollY > 0) {
+      setIsScrolling(true);
+    } else {
+      setIsScrolling(false);
     }
-})
- },[]);
+  }
+
+  window.addEventListener("scroll", setFixed);
+
   return (
-
-    <div>
-      <div className="header__content__content__nav__main">
-        <div className="header__content__nav__heading">
-          IBT <span>Pakistan</span>
-        </div>
-
-        {isOpen ? (
-            <OutsideClickHandler 
-            onOutsideClick={() =>{
-                if (Window.innerWidth < 1000) {
-                    setIsOpen(false);
-                }
-            }}
-            >
-                <div className="header__content__content__nav__components">
-            <a href="#Home">Home</a>
-            <a href="#components">Components</a>
-            <a href="#Specifications">Specifications</a>
-            <a href="#Features">Features</a>
-            <a href="#Location">Location</a>
-          </div>
-          </OutsideClickHandler>
-        ) : null}
-            
-          
-        <button
-          className="ibt__contant__nav"
-          onClick={() => {
-            setIsOpen(!isOpen);
-          }}
-          title="Menu"
+    <>
+      <div className="nav__main">
+        <div
+          className="header__content__content__nav__main"
+          data-aos="fade-left"
+          style={isScrolling ? { backgroundColor: "#a58838" } : null}
         >
+          <div className="header__content__nav__heading">
+            <div className="nav__background"></div>
+            IBT <span>Pakistan</span>
+          </div>
+
           {isOpen ? (
-            <Close size={24} color="white" />
-          ) : (
-            <Menu size={24} color="white" />
-          )}
-        </button>
+            <OutsideClickHandler
+              onOutsideClick={() => {
+                if (window.innerWidth < 1200) {
+                  setIsOpen(false);
+                }
+                console.log("clicked outside");
+              }}
+            >
+              <div className="header__content__content__nav__components">
+                <a className="header__buttons" href="#Home">
+                  Home
+                </a>
+                <a className="header__buttons" href="#components">
+                  Components
+                </a>
+                <a className="header__buttons" href="#Specifications">
+                  Specifications
+                </a>
+                <a className="header__buttons" href="#Features">
+                  Features
+                </a>
+                <a className="header__buttons" href="#Location">
+                  Location
+                </a>
+              </div>
+            </OutsideClickHandler>
+          ) : null}
+
+          <button
+            className="ibt__contant__nav"
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+            title="Menu"
+          >
+            {isOpen ? (
+              <Close size={24} color="white" />
+            ) : (
+              <Menu size={24} color="white" />
+            )}
+          </button>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 function Menu({ color, size }) {

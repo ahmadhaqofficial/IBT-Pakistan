@@ -385,7 +385,7 @@ export default function home() {
               <a
                 className="footer__Link"
                 href=" #Home"
-                style={{ fontWeight: "600" }}
+                style={{ fontWeight: "600", marginTop: "0" }}
               >
                 Home
               </a>

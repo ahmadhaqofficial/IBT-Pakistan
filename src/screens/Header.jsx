@@ -44,7 +44,13 @@ export default function Header() {
           className="header__content__content__nav__main"
           data-aos="fade-left"
           style={
-            isScrolling ? { backgroundColor: "#a58838", height: "70px" } : null
+            isScrolling
+              ? {
+                  backgroundColor: "black",
+                  height: "80px",
+                  paddingTop: "1.5em",
+                }
+              : null
           }
         >
           <div className="header__content__nav__heading">

@@ -53,7 +53,7 @@ body {
 .header__content__nav__heading {
   font-size: 33px;
   font-weight: 600;
-  padding-top: 0.4em;
+
   display: flex;
   align-items: center;
 }
@@ -74,10 +74,9 @@ body {
 .header__buttons:hover {
   background-color: #a58838;
 }
-.header__content__content__nav__components
-  ~ .header__buttons:checked
-  .header__buttons:hover {
-  background-color: #a58838;
+.header__content__content__nav__components {
+  height: 100%;
+  width: 100%;
 }
 .header__content__content__nav__main {
   display: flex;
@@ -729,7 +728,7 @@ body {
     width: 50% !important;
   }
   .components__main__container {
-    height: 830px;
+    height: 850px;
   }
   .location__finder__content {
     right: unset !important;
@@ -853,6 +852,9 @@ body {
   .header__content__nav__heading {
     font-size: 25px;
     padding-top: 1em;
+  }
+  .components__main__container {
+    height: 890px;
   }
 }
 .intro__container__content__heading {

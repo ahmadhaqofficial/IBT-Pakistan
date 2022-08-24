@@ -82,7 +82,7 @@ export default function home() {
             <div className="max__class">
               <div
                 className="intro__container__content__heading"
-                style={{ width: "88%", paddingLeft: "0", margin: "0 auto" }}
+                style={{ width: "88%", margin: "0 auto", paddingLeft: "1em" }}
               >
                 PROJECT COMPONENTS
                 <div className="intro__container__content__heading__underline"></div>
@@ -265,11 +265,11 @@ export default function home() {
 
       <div className="project__location__main__container" data-aos="fade-up">
         <div
-          className="intro__container__content__heading"
-          style={{ paddingLeft: "1em" }}
+          className="intro__container__content__heading project__location__heading"
+          style={{ paddingLeft: " 16px" }}
         >
           LOCATION DISTANCES
-          <div className="intro__container__content__heading__underline"></div>
+          <div className="intro__container__content__heading__underline "></div>
         </div>
         <div className="location__cards__main__ccontainer">
           <div className="project__locations__cards__container">
@@ -359,6 +359,9 @@ export default function home() {
         <div style={{ marginLeft: "1.5em" }}>
           <div className="footer__icons__list">
             <div className="footer__columms" style={{ width: "33%" }}>
+              <div className="header__content__nav__heading">
+                IBT <span> Pakistan</span>
+              </div>
               <div
                 style={{
                   fontSize: "16px",
@@ -378,13 +381,26 @@ export default function home() {
                 will be displayed at national pavilion
               </div>
             </div>
-            <div className="footer__columms left__border">
-              <div className="footer__Links__tilte">Home</div>
-
-              <div className="footer__Link">Components</div>
-              <div className="footer__Link">Specifications</div>
-              <div className="footer__Link">Features</div>
-              <div className="footer__Link">Location</div>
+            <div className="footer__columms left__border ">
+              <a
+                className="footer__Link"
+                href=" #Home"
+                style={{ fontWeight: "600" }}
+              >
+                Home
+              </a>
+              <a className="footer__Link" href="#components">
+                Components
+              </a>
+              <a className="footer__Link" href="#Specifications">
+                Specifications
+              </a>
+              <a className="footer__Link" href="#Features">
+                Features
+              </a>
+              <a className="footer__Link" href="#Location">
+                Location
+              </a>
             </div>
             <div className="footer__columms left__border">
               <div className="footer__Links__tilte">Quick links</div>

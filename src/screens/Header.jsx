@@ -1,11 +1,11 @@
-import React, { useLayoutEffect } from "react";
-
+import React, { useEffect, useLayoutEffect } from "react";
 import OutsideClickHandler from "react-outside-click-handler";
+import { Close } from "./Close";
+import { Menu } from "./Menu";
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(true);
   const [isScrolling, setIsScrolling] = React.useState(false);
-  const [fix, setFix] = React.useState(false);
 
   function checkNavOpenClose() {
     if (window.innerWidth < 1200) {
@@ -16,26 +16,21 @@ export default function Header() {
   }
   useLayoutEffect(() => {
     checkNavOpenClose();
+  }, []);
+
+  useEffect(() => {
     window.addEventListener("resize", checkNavOpenClose);
-    window.addEventListener("scroll", () => {
-      checkNavOpenClose();
-      if (window.scrollY > 0) {
-        setIsScrolling(true);
-      } else {
-        setIsScrolling(false);
-      }
-    });
+    window.addEventListener("scroll", setFixed);
   }, []);
 
   function setFixed() {
+    checkNavOpenClose();
     if (window.scrollY > 0) {
       setIsScrolling(true);
     } else {
       setIsScrolling(false);
     }
   }
-
-  window.addEventListener("scroll", setFixed);
 
   return (
     <>
@@ -64,7 +59,6 @@ export default function Header() {
                 if (window.innerWidth < 1200) {
                   setIsOpen(false);
                 }
-                console.log("clicked outside");
               }}
             >
               <div className="header__content__content__nav__components">
@@ -103,42 +97,5 @@ export default function Header() {
         </div>
       </div>
     </>
-  );
-}
-function Menu({ color, size }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke={color}
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="feather feather-menu"
-    >
-      <line x1="3" y1="12" x2="21" y2="12"></line>
-      <line x1="3" y1="6" x2="21" y2="6"></line>
-      <line x1="3" y1="18" x2="21" y2="18"></line>
-    </svg>
-  );
-}
-function Close({ color, size }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke={color}
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="feather feather-x"
-    >
-      <line x1="18" y1="6" x2="6" y2="18"></line>
-      <line x1="6" y1="6" x2="18" y2="18"></line>
-    </svg>
   );
 }

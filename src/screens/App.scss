@@ -96,8 +96,6 @@ body {
   padding-top: 0em;
   align-items: center;
   z-index: 9999;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
 }
 
 .nav__background {
@@ -332,7 +330,7 @@ body {
     display: flex;
     background-color: #a58838;
     padding: 8px;
-    border-radius: 12px;
+
     cursor: pointer;
     outline: none;
     border: none;
@@ -1046,15 +1044,16 @@ body {
 }
 .location__finder__footer__button button {
   padding: 0.7em;
-  background-color: #a58838;
+  background-color: white;
   width: 65%;
   height: 44px;
   border: 1px solid white;
-  color: white;
+  color: #bc993d;
   cursor: pointer;
 }
 .location__finder__footer__button button:hover {
   background-color: #bc993d;
+  color: white;
 }
 .footer__main__container {
   display: flex;

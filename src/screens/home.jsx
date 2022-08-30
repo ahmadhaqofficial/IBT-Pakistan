@@ -230,8 +230,8 @@ export default function home() {
               <div className="intro__container__content__heading__underline"></div>
             </div>
             <div className="feature__text__background__light">
-              <span className="feature__text"> Largest </span> and{" "}
-              <span className="feature__text">Tallest </span> Building of
+              <span className="feature__text"> Largest </span> and
+              <span className="feature__text"> Tallest </span> Building of
               Pakistan
             </div>
             <div
@@ -260,7 +260,7 @@ export default function home() {
         <div
           className="project__location__main__container"
           id="project-locations"
-        ></div>
+        />
       </div>
 
       <div className="project__location__main__container" data-aos="fade-up">
@@ -404,10 +404,10 @@ export default function home() {
             </div>
             <div className="footer__columms left__border">
               <div className="footer__Links__tilte">Quick links</div>
-              <a className="footer__Link" href="">
+              <a className="footer__Link" href="#">
                 Terms and conditions
               </a>
-              <a className="footer__Link" href="">
+              <a className="footer__Link" href="#">
                 Privacy policy
               </a>
             </div>
